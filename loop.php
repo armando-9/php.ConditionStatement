@@ -54,6 +54,7 @@
     foreach ($food as $std => $val) {
         echo "ชื่อ $std ชอบกิน$val<br>";
     }
+    echo ""
 
 
         
