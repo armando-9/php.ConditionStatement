@@ -47,7 +47,7 @@
 <?php
 $base = $_POST['base'];
 $hight =$_POST['hight'];
-$area = 0.5*$hight*$base;
+$area = triangleArea($hight,$base);
 ?>
 <br>
 <div class="result-box">
@@ -56,6 +56,11 @@ $area = 0.5*$hight*$base;
         <a href="triangle_area_form.php" class="btn">กลับไปหน้าแบบฟอร์ม</a>
     </div>
 </center>
-    
+    <?php 
+    function triangleArea($h,$b){
+        $a = 0.5 * $h * $b;
+        return $a;
+    }
+    ?>
 </body>
 </html>
